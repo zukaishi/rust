@@ -1,5 +1,4 @@
 - https://doc.rust-jp.rs/book-ja/ch01-01-installation.html
-- 
 ```
 $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 info: downloading installer
