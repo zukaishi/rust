@@ -90,3 +90,8 @@ source $HOME/.cargo/env
 rustc --version
 rustc 1.55.0 (c8dfcfe04 2021-09-06)
 ```
+
+```
+cargo --version
+cargo 1.55.0 (32da73ab1 2021-08-23)
+```
