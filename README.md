@@ -85,3 +85,8 @@ Cargo's bin directory ($HOME/.cargo/bin).
 To configure your current shell, run:
 source $HOME/.cargo/env
 ```
+
+```
+rustc --version
+rustc 1.55.0 (c8dfcfe04 2021-09-06)
+```
