@@ -92,6 +92,9 @@ rustc 1.55.0 (c8dfcfe04 2021-09-06)
 ```
 
 ```
-cargo --version
+$cargo --version
 cargo 1.55.0 (32da73ab1 2021-08-23)
+
+$ cargo new hello_cargo --bin
+$ cd hello_cargo
 ```
