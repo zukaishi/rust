@@ -108,4 +108,8 @@ $ cargo run
     Finished dev [unoptimized + debuginfo] target(s) in 0.05s
      Running `target/debug/hello_cargo`
 Hello, world!
+
+$ cargo check
+    Checking hello_cargo v0.1.0 (/Users/hishizuka/Work/git/rust/hello_cargo)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.67s
 ```
