@@ -101,4 +101,6 @@ $ cd hello_cargo
 $ cargo build
    Compiling hello_cargo v0.1.0 (/Users/hishizuka/Work/git/rust/hello_cargo)
     Finished dev [unoptimized + debuginfo] target(s) in 2.23s
+$ ./target/debug/hello_cargo
+Hello, world!
 ```
