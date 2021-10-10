@@ -18,4 +18,10 @@ fn main() {
     let tup = (500, 6.4, 1);
     let (x, y, z) = tup;
     println!("The value of x is : {},y is: {}, z is :{}",x, y,z);
+
+    let a = [1, 2, 3, 4, 5];
+
+    let first = a[0];
+    let second = a[1];
+    println!("{},{}",first,second);    
 }
