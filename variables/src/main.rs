@@ -23,5 +23,11 @@ fn main() {
 
     let first = a[0];
     let second = a[1];
-    println!("{},{}",first,second);    
+    println!("{},{}",first,second);
+
+    another_function();
+}
+
+fn another_function() {
+    println!("Another function.");
 }
