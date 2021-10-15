@@ -33,7 +33,11 @@ fn main() {
     };
     println!("The value of y is: {}", y);
 
-    println!("The value of x is: {}", five());
+    println!("The five function return of number is: {}", five());
+    println!("The plus_one function return of number is: {}", plus_one(10));
+
+    let xx : i32 = 12;
+    println!("The plus_one function return of number is: {}", plus_one(xx));
 }
 
 fn another_function(x: i32) {
@@ -42,4 +46,8 @@ fn another_function(x: i32) {
 
 fn five() -> i32 {
     5
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
