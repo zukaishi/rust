@@ -42,10 +42,20 @@ fn main() {
     let number = 3;
 
     if number < 5 {
-        println!("condition was true");       // 条件は真でした
+        println!("condition was true");
     } else {
-        println!("condition was false");      // 条件は偽でした
+        println!("condition was false");
     }
+
+    let condition = true;
+    let number = if condition {
+        5
+    } else {
+        6
+    };
+
+    // numberの値は、{}です
+    println!("The value of number is: {}", number);
 }
 
 fn another_function(x: i32) {
