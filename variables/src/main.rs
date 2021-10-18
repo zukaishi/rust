@@ -53,9 +53,15 @@ fn main() {
     } else {
         6
     };
-
-    // numberの値は、{}です
     println!("The value of number is: {}", number);
+
+
+    let mut number = 3;
+    while number != 0 {
+        println!("{}!", number);
+        number = number - 1;
+    }
+    println!("LIFTOFF!!!");
 }
 
 fn another_function(x: i32) {
