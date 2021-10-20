@@ -71,6 +71,11 @@ fn main() {
         println!("the value is: {}", a[index]);
         index = index + 1;
     }
+
+    let a = [10, 20, 30, 40, 50];
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
 }
 
 fn another_function(x: i32) {
