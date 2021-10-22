@@ -1,15 +1,12 @@
 fn main() {
-    let mut i = 1;
-    while i <= 15 {
-        let mut f = "";
-        let mut b = "";
+    for i in 1..16 {
+        let mut s: String = "".to_string();
         if i % 3 == 0 {
-            f = "fizz";
+            s.push_str("fizz");
         }
         if i % 5 == 0 {
-            b = "buzz";
+            s.push_str("buzz");
         }
-        println!("{}{}{}",i,f,b);
-        i+=1;
+        println!("{}{}",i,s);
     }
 }
