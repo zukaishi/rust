@@ -19,9 +19,9 @@ fn fizzbuzz2(){
     println!("### fizzbuzz2 ###");
     for i in 1..16 {
         match i {
-            a if a % 15 == 0 => println!("FizzBuzz"),
-            a if a % 3 == 0 => println!("Fizz"),
-            a if a % 5 == 0 => println!("Buzz"),
+            e if e % 15 == 0 => println!("FizzBuzz"),
+            e if e % 3 == 0 => println!("Fizz"),
+            e if e % 5 == 0 => println!("Buzz"),
             a => println!("{}", a),
         }
     }
