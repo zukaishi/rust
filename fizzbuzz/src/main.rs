@@ -1,6 +1,7 @@
 fn main() {
     fizzbuzz1();
     fizzbuzz2();
+    fizzbuzz3();
 }
 fn fizzbuzz1(){
     println!("### fizzbuzz1 ###");
@@ -22,7 +23,10 @@ fn fizzbuzz2(){
             e if e % 15 == 0 => println!("FizzBuzz"),
             e if e % 3 == 0 => println!("Fizz"),
             e if e % 5 == 0 => println!("Buzz"),
-            a => println!("{}", a),
+            e => println!("{}", e),
         }
     }
+}
+fn fizzbuzz3(){
+    println!("### fizzbuzz3 ###");
 }
