@@ -76,6 +76,19 @@ fn main() {
     for element in a.iter() {
         println!("the value is: {}", element);
     }
+
+    let s1 = String::from("hello");
+    let s2 = s1.clone();
+    // let s3 = s1;  // できない
+    println!("{}, world!", s1);
+    println!("{}, world!", s2);
+
+    let s = String::from("hello");  
+    takes_ownership(s);
+    // println!("{}", s); // s move scope
+    let x = 5;
+    makes_copy(x);  
+    println!("{}", x);
 }
 
 fn another_function(x: i32) {
@@ -89,3 +102,11 @@ fn five() -> i32 {
 fn plus_one(x: i32) -> i32 {
     x + 1
 }
+
+fn takes_ownership(some_string: String) { 
+    println!("{}", some_string);
+} 
+
+fn makes_copy(some_integer: i32) { 
+    println!("{}", some_integer);
+} 
