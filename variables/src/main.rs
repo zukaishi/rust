@@ -94,6 +94,9 @@ fn main() {
     let (s2, len) = calculate_length(s1);
     println!("The length of '{}' is {}.", s2, len);
 
+    let s1 = String::from("hello");
+    let len = calculate_length2(&s1);
+    println!("The length of '{}' is {}.", s1, len);
 }
 
 fn another_function(x: i32) {
@@ -119,4 +122,8 @@ fn makes_copy(some_integer: i32) {
 fn calculate_length(s: String) -> (String, usize) {
     let length = s.len(); 
     (s, length)
+}
+
+fn calculate_length2(s: &String) -> usize {
+    s.len()
 }
