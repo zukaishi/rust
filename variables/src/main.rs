@@ -89,6 +89,11 @@ fn main() {
     let x = 5;
     makes_copy(x);  
     println!("{}", x);
+
+    let s1 = String::from("hello");
+    let (s2, len) = calculate_length(s1);
+    println!("The length of '{}' is {}.", s2, len);
+
 }
 
 fn another_function(x: i32) {
@@ -110,3 +115,8 @@ fn takes_ownership(some_string: String) {
 fn makes_copy(some_integer: i32) { 
     println!("{}", some_integer);
 } 
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); 
+    (s, length)
+}
