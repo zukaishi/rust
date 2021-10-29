@@ -97,6 +97,9 @@ fn main() {
     let s1 = String::from("hello");
     let len = calculate_length2(&s1);
     println!("The length of '{}' is {}.", s1, len);
+
+    let mut s = String::from("hello");
+    change(&mut s);
 }
 
 fn another_function(x: i32) {
@@ -126,4 +129,8 @@ fn calculate_length(s: String) -> (String, usize) {
 
 fn calculate_length2(s: &String) -> usize {
     s.len()
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
 }
