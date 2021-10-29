@@ -100,6 +100,17 @@ fn main() {
 
     let mut s = String::from("hello");
     change(&mut s);
+
+    {
+        let r1 = &mut s;
+    }
+    let r2 = &mut s;
+
+    let mut s = String::from("hello");
+
+    let r1 = &s; // 問題なし
+    let r2 = &s; // 問題なし
+    let r3 = &mut s; // 大問題！
 }
 
 fn another_function(x: i32) {
