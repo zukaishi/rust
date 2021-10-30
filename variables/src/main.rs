@@ -107,10 +107,13 @@ fn main() {
     let r2 = &mut s;
 
     let mut s = String::from("hello");
+    let r1 = &s;
+    let r1 = &mut s;
 
-    let r1 = &s; // 問題なし
-    let r2 = &s; // 問題なし
-    let r3 = &mut s; // 大問題！
+    let s = String::from("hello world");
+    let hello = &s[0..5];
+    let world = &s[6..11];
+    println!("{}{}",hello,world);
 }
 
 fn another_function(x: i32) {
