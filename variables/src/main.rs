@@ -114,6 +114,21 @@ fn main() {
     let hello = &s[0..5];
     let world = &s[6..11];
     println!("{}{}",hello,world);
+
+
+    struct User {
+        username: String,
+        email: String,
+        sign_in_count: u64,
+        active: bool,
+    }
+    let user1 = User {
+        username: String::from("someusername123"),
+        email: String::from("someone@example.com"),
+        sign_in_count: 1,
+        active: true,
+    };
+    println!("{} {} {} {}",user1.username,user1.email,user1.sign_in_count,user1.active);
 }
 
 fn another_function(x: i32) {
