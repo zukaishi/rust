@@ -129,6 +129,15 @@ fn main() {
         active: true,
     };
     println!("{} {} {} {}",user1.username,user1.email,user1.sign_in_count,user1.active);
+
+    struct Color(i32, i32, i32);
+    struct Point(i32, i32, i32);
+
+    let black = Color(128, 1, 2);
+    let origin = Point(255, 3, 4);
+    println!("{}",black.0);
+    println!("{}",origin.0);
+
 }
 
 fn another_function(x: i32) {
