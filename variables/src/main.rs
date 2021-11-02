@@ -1,3 +1,8 @@
+
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
 fn main() {
     let mut x = 5;
     println!("The value of x is: {}", x);
@@ -138,6 +143,12 @@ fn main() {
     println!("{}",black.0);
     println!("{}",origin.0);
 
+    let rect1 = Rectangle { width: 30, height: 50 };
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        area(&rect1)
+    );
 }
 
 fn another_function(x: i32) {
@@ -171,4 +182,7 @@ fn calculate_length2(s: &String) -> usize {
 
 fn change(some_string: &mut String) {
     some_string.push_str(", world");
+}
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
 }
