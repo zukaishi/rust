@@ -13,8 +13,15 @@ impl Rectangle {
         Rectangle { width: size, height: size }
     }
 }
-
+enum IpAddrKind {
+    V4 = 100,
+    V6 = 200,
+}
 fn main() {
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
+    println!("{}",four as usize);
+
     let mut x = 5;
     println!("The value of x is: {}", x);
     x = 6;
