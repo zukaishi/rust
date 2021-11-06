@@ -17,11 +17,14 @@ enum IpAddrKind {
     V4 = 100,
     V6 = 200,
 }
-fn main() {
-    let four = IpAddrKind::V4;
-    let six = IpAddrKind::V6;
-    println!("{}",four as usize);
 
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+fn main() {
     let mut x = 5;
     println!("The value of x is: {}", x);
     x = 6;
@@ -178,6 +181,21 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         sq.area()
     );
+
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
+    println!("{}",four as usize);
+
+    let dime = Coin::Dime;
+    println!("{}",value_in_cents(dime));
+}
+fn value_in_cents(coin: Coin) -> u32 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
 }
 
 fn another_function(x: i32) {
