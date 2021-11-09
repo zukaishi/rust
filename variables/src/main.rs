@@ -18,12 +18,17 @@ enum IpAddrKind {
     V6 = 200,
 }
 
+enum UsState {
+    Alabama,
+    Alaska,
+ }
+
 enum Coin {
     Penny,
     Nickel,
     Dime,
-    Quarter,
-}
+    Quarter(UsState),
+ }
 fn main() {
     let mut x = 5;
     println!("The value of x is: {}", x);
@@ -186,9 +191,6 @@ fn main() {
     let six = IpAddrKind::V6;
     println!("{}",four as usize);
 
-    let dime = Coin::Dime;
-    println!("{}",value_in_cents(dime));
-
     let some_u8_value = Some(0u8);
     match some_u8_value {
         Some(3) => println!("three"),
@@ -196,15 +198,16 @@ fn main() {
     }
     if let Some(3) = some_u8_value {
         println!("three");
-    }    
-}
-fn value_in_cents(coin: Coin) -> u32 {
-    match coin {
-        Coin::Penny => 1,
-        Coin::Nickel => 5,
-        Coin::Dime => 10,
-        Coin::Quarter => 25,
     }
+
+    let mut count = 0;
+    let coin = Coin::Penny;
+    match coin {
+        // {:?}州のクォーターコイン
+        Coin::Quarter(state) => println!("State quarter from {:?}!", count),
+        _ => count += 1,
+    }
+    println!("{}",count);
 }
 
 fn another_function(x: i32) {
